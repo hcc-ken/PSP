@@ -1,4 +1,7 @@
 package EjercicioHilos02;
 
-public class VocalHilo {
+public class VocalHilo extends Thread {
+    public VocalHilo() {
+
+    }
 }
