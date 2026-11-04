@@ -7,13 +7,15 @@ public class Main {
         RelevosHilos relevo3 = new RelevosHilos("Relevo 3");
         RelevosHilos relevo4 = new RelevosHilos("Relevo 4");
 
-        try {
-            relevo1.join();
-            relevo2.join();
-            relevo3.join();
-            relevo4.join();
-        } catch (InterruptedException e) {
-            System.out.println("Carrera interrumpida");
+        RelevosHilos[] corredores = {relevo1, relevo2, relevo3, relevo4};
+
+        for (int i = 0; i < corredores.length; i++) {
+            try {
+                corredores[i].join();
+            } catch (InterruptedException e) {
+                System.out.println("Carrera interumpida");
+            }
         }
+        System.out.println("La carrera ha finalizado");
     }
 }
