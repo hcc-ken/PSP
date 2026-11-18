@@ -8,14 +8,8 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main (String[] args) {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Escriba una frase.");
         String frase = recogerString();
-        try {
-            frase = br.readLine();
-        } catch (IOException e) {
-            System.out.println("Se ha producido un error");
-        }
 
         Thread hilo0 = new Contador(frase, '0');
         Thread hilo1 = new Contador(frase, '1');
@@ -34,6 +28,7 @@ public class Main {
             hilo2.join();
             hilo3.join();
             hilo4.join();
+            hilo5.join();
             hilo6.join();
             hilo7.join();
             hilo8.join();
