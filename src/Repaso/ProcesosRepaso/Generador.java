@@ -1,4 +1,4 @@
-package Repaso;
+package Repaso.ProcesosRepaso;
 
 public class Generador {
     public static void main(String[] args) {

@@ -1,10 +1,6 @@
-package Repaso;
+package Repaso.ProcesosRepaso;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-import static Repaso.Main.recogerString;
+import static Repaso.ProcesosRepaso.Main.recogerString;
 
 public class Filtro {
     public static void main (String[] args) {

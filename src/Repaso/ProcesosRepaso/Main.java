@@ -1,4 +1,4 @@
-package Repaso;
+package Repaso.ProcesosRepaso;
 
 import java.io.BufferedReader;
 import java.io.IOException;
